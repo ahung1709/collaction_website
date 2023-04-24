@@ -49,7 +49,7 @@ export default function NavBar() {
         )}
         <div
           className={clsx(
-            'flex flex-col md:flex-row flex-wrap px-6 lg:px-0 md:items-center justify-center md:justify-between mx-auto py-4',
+            'flex flex-col md:flex-row flex-wrap px-6 md:px-0 md:items-center justify-center md:justify-between mx-auto py-4',
             'md:max-w-[700px] lg:max-w-864',
             'z-20'
           )}
@@ -170,7 +170,7 @@ export default function NavBar() {
                 {t('app:navbar.team')}
               </Link>
               <Link
-                href="/projects"
+                href="/projects?page=1"
                 onClick={() => {
                   setNavbar(false);
                 }}
